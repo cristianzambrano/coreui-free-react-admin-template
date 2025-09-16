@@ -33,7 +33,7 @@ const Rutas = () => {
   const [rutaSeleccionada, setRutaSeleccionada] = useState(23) // 12 * 2 - 1 = 23
 
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: "AIzaSyAF0J8ZotuystEYO-lfOD6aEPmKsu-6DY4",
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
   })
 
   useEffect(() => {
